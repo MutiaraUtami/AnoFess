@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnoFess</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Homemade+Apple&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <style>
+        .body, .btn, input::placeholder, textarea::placeholder {
+            font-family: 'Inter', sans-serif;
+        }
+        .navbar, .tagline, .card-title {
+            font-family: 'Balsamiq Sans', sans-serif;
+        }
+        .tagline, .card-text {
+            opacity: 0.7;
+        }
+        .navbar-brand, .title{
+            font-family: 'Homemade Apple', sans-serif;
+        }
+        .search-box, .form-container {
+            max-width: 700px;
+            margin: auto;
+            padding: 60px;
+        }
+        .toast {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+        }
+    </style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand ms-5 me-5" href="home.php">
+                <img src="images/logo.png" alt="Logo" width="30" height="30" margin="20" class="d-inline-block align-text-top">
+                <span class="ms-3">AnoFess</span>
+            </a>
+            <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Menu tengah -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="browse.php">Browse</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="submit.php">Submit</a>
+                    </li>
+                </ul>
+                <!-- Menu kanan -->
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-dark rounded-pill px-4" href="teer.id/mutiara_utami">Support Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
